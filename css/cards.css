@@ -1,0 +1,71 @@
+/* Card design section*/
+.gcard {
+   width: 70px;
+   height: 100px;
+   margin-left: -20px;
+   margin-right: -20px;
+   background: #fff;
+   border-radius: 5px;
+   box-sizing: border-box;
+   box-shadow: 0 0 10px #777777;
+   float: left;
+   z-index: 99;
+}
+
+.gcard img {
+   width: 70px;
+   height: 100px;
+}
+
+.my-card {
+   position: relative;
+   top: 0;
+   transition: top 0.5s ease, margin-right 0.5s, margin-left 0.5s;
+   transition-delay: 0.1s;
+}
+
+.my-card:hover {
+   cursor: pointer;
+   top: -15px;
+   margin-right: -10px;
+   margin-left: -10px;
+}
+
+/* Deck cards section*/
+.draw-deck-field {
+   width: 70px;
+   height: 100px;
+   background-image: url("../img/cards/card_deck.png");
+   background-position: center center;
+   background-repeat: no-repeat;
+   background-size: 70px 100px;
+   border-radius: 10px;
+   box-shadow: 0 0 10px #777777;
+   text-align: center;
+   position: relative;
+   z-index: 100;
+}
+
+#drawCardPile {
+   width: 100%;
+   height: 100%;
+   cursor: pointer;
+}
+
+.drawing-card {
+   margin-bottom: -110px;
+   display: inline-block;
+}
+
+.draw-stack-count {
+   width: 80px;
+   height: 150px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #fff;
+   font-family: "Source Sans Pro", sans-serif;
+   font-size: 60px;
+   text-shadow: 1px 1px 0 #000000, -1px -1px 0 #000000, -1px 1px 0 #000000, 1px -1px 0 #000000, 1px 0 0 #000000, -1px 0 0 #000000, 0 -1px 0 #000000, 0 1px 0 #000000,
+      4px 4px 0 #000000;
+}
